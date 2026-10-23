@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications | Mohammad Al Labban</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
+
+<aside class="sidebar">
+  <div class="profile">
+    <img src="your-picture.jpg" alt="Mohammad Al Labban" class="profile-picture">
+    <h1>Mohammad Al Labban</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="Mohammad-Al-Labban.html">Home</a></li>
+      <li><a href="About.html">About Me</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="Certificates.html">Certifications</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button id="theme-toggle" class="btn" type="button" aria-label="Toggle theme">🌙 Dark Mode</button>
+</aside>
+
+<main class="main-content">
+  <section class="section">
+
+    <h2>Education</h2>
+    <ul>
+      <li><strong>MBA Project and Operations Management</strong> at York St John University – 2026</li>
+      <li><strong>Diploma in Digital Store Management</strong> at USA Train Prog Academy – 2023</li>
+      <li><strong>Undergraduate Degree in Computer Science</strong> at AUL University – 2016</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+      <li><strong>Digital Marketing</strong></li>
+      <li><strong>Digital Store Management</strong></li>
+      <li><strong>Information Technology Leadership</strong></li>
+      <li><strong>Information Technology Strategy</strong></li>
+      <li><strong>Logistics</strong></li>
+      <li><strong>Programming</strong></li>
+      <li><strong>Project Management by Microsoft and LinkedIn</strong></li>
+      <li><strong>Project Management Institute</strong></li>
+    </ul>
+
+    <p>You can download all my certificates together in one ZIP file:</p>
+    <a href="Certificates.zip" download class="btn">⬇️ Download All Certificates</a>
+
+  </section>
+</main>
+
+<div id="cert-modal" class="modal" aria-hidden="true">
+  <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+    <h2 id="cert-modal-title" class="sr-only">Certificate preview</h2>
+    <button class="close-btn" type="button" aria-label="Close certificate viewer">&times;</button>
+    <div id="cert-pdf-container" class="cert-pdf-container" aria-live="polite"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

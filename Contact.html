@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mohammad Al Labban</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
+
+<aside class="sidebar">
+  <div class="profile">
+    <img src="your-picture.jpg" alt="Mohammad Al Labban" class="profile-picture">
+    <h1>Mohammad Al Labban</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="Mohammad-Al-Labban.html">Home</a></li>
+      <li><a href="About.html">About Me</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="Certificates.html">Certifications</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button id="theme-toggle" class="btn" type="button" aria-label="Toggle theme">🌙 Dark Mode</button>
+</aside>
+
+<main class="main-content">
+  <section class="section">
+    <h2>Contact</h2>
+    <p>If you’d like to get in touch, please use the form below:</p>
+
+    <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

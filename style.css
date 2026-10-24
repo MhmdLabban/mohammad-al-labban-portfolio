@@ -266,9 +266,9 @@ a {
 }
 
 .hero h1 {
-  max-width: 780px;
+  max-width: 100%;
   font-size: clamp(3.25rem, 6vw, 5.8rem);
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .hero-title-accent {

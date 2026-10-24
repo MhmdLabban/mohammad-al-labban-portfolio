@@ -1,40 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Mohammad Al Labban</title>
+  <title data-i18n="home.pageTitle">Home | Mohammad Al Labban</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <aside class="sidebar">
-    <div class="profile">
-      <img src="your-picture.jpeg" alt="Mohammad Al Labban" class="profile-picture">
-      <h1>Mohammad Al Labban</h1>
-      <p class="tagline">Touch Point Manager | Retail Operations | Team Leadership</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="About.html">About Me</a></li>
-        <li><a href="CV.html">CV</a></li>
-        <li><a href="Certificates.html">Certifications</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Mohammad Al Labban home" data-i18n-aria-label="common.home">MAL</a>
+    <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation" data-i18n-aria-label="nav.label">
+      <a href="About.html" data-i18n="nav.about">About</a>
+      <a href="CV.html" data-i18n="nav.experience">Experience</a>
+      <a href="Certificates.html" data-i18n="nav.education">Education</a>
+      <a href="Contact.html" data-i18n="nav.contact">Contact</a>
     </nav>
-    <button id="theme-toggle" class="btn" type="button" aria-label="Toggle theme">🌙 Dark Mode</button>
-  </aside>
-  <button class="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
-  <main class="main-content">
-    <section class="hero section">
-      <div class="intro">
-        <h1>Hello, I'm <span>Mohammad Al Labban</span></h1>
-        <p>I lead Touch Point and cashiering operations at Primark in Dubai, managing a team of 55+ colleagues. With 8+ years of retail experience, I focus on customer experience, team development, sales support, and efficient store operations, backed by a strong background in visual merchandising and inventory management.</p>
-        <div class="cta-buttons">
-          <a href="CV.html" class="btn">📄 View My CV</a>
-          <a href="Contact.html" class="btn">📨 Get in Touch</a>
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">☾</button>
+      <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language">العربية</button>
+      <a class="header-cta" href="Contact.html"><span data-i18n="common.talk">Let’s talk</span> <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main class="main-content home-page">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span><span data-i18n="home.eyebrow">RETAIL OPERATIONS · PEOPLE · CUSTOMER EXPERIENCE</span></p>
+          <h1 id="hero-title" data-i18n="home.title">Mohammad Al Labban</h1>
+          <span class="hero-title-accent" aria-hidden="true"></span>
+          <p class="hero-role"><span data-i18n="home.role">Touch Point Manager</span> <span>·</span> <span data-i18n="home.role2">Retail Operations</span> <span>·</span> <span data-i18n="home.role3">Team Leadership</span></p>
+          <p class="hero-description" data-i18n="home.description">I lead Touch Point and cashiering operations at Primark in Dubai, managing a team of 55+ colleagues. I focus on customer experience, team development, and efficient store operations.</p>
+          <div class="cta-buttons">
+            <a href="CV.html" class="btn btn-primary"><span data-i18n="home.explore">Explore my experience</span> <span aria-hidden="true">↗</span></a>
+            <a href="Contact.html" class="btn btn-outline" data-i18n="common.getInTouch">Get in touch</a>
+          </div>
         </div>
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <div class="portrait-ring"></div>
+            <img src="your-picture.jpeg" alt="Mohammad Al Labban">
+          </div>
+          <div class="orbit-note orbit-note-top" data-i18n="home.people">People &amp; leadership</div>
+          <div class="orbit-note orbit-note-bottom" data-i18n="home.service">Service &amp; operations</div>
+        </div>
+      </div>
+      <div class="hero-bottom"><span data-i18n="home.motto">Focused on people. Driven by great service.</span><span><span data-i18n="home.scroll">SCROLL TO EXPLORE</span> <b aria-hidden="true">↓</b></span></div>
+    </section>
+    <section class="impact-strip" aria-label="Professional focus" data-i18n-aria-label="home.focus">
+      <article><span class="impact-mark">55+</span><div><h2 data-i18n="home.colleagues">Colleagues</h2><p data-i18n="home.teamDev">Team leadership and development</p></div></article>
+      <article><span class="impact-mark">01</span><div><h2 data-i18n="home.customer">Customer experience</h2><p data-i18n="home.serviceVisit">Service that makes every visit count</p></div></article>
+      <article><span class="impact-mark">02</span><div><h2 data-i18n="home.operations">Retail operations</h2><p data-i18n="home.frontend">Reliable, efficient front-end delivery</p></div></article>
+      <article><span class="impact-mark">03</span><div><h2 data-i18n="home.visual">Visual &amp; inventory</h2><p data-i18n="home.storeFoundations">Strong foundations across the store</p></div></article>
+    </section>
+    <section class="focus-section" aria-labelledby="focus-title">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span><span data-i18n="home.bring">WHAT I BRING</span></p>
+        <h2 id="focus-title" data-i18n="home.focusTitle">People, service, and operations—working together.</h2>
+        <p data-i18n="home.focusDescription">My approach combines hands-on retail experience with a genuine focus on developing teams and making daily operations work better.</p>
+      </div>
+      <div class="focus-grid">
+        <article class="focus-card">
+          <span class="card-index" data-i18n="home.serviceIndex">01 / SERVICE</span>
+          <div class="card-icon" aria-hidden="true">↗</div>
+          <h3 data-i18n="home.customer">Customer experience</h3>
+          <p data-i18n="home.customerDescription">Creating welcoming, responsive service while resolving issues with care and confidence.</p>
+        </article>
+        <article class="focus-card">
+          <span class="card-index" data-i18n="home.peopleIndex">02 / PEOPLE</span>
+          <div class="card-icon" aria-hidden="true">◎</div>
+          <h3 data-i18n="home.leadership">Team leadership</h3>
+          <p data-i18n="home.leadershipDescription">Coaching colleagues, building capability, and bringing teams together around shared goals.</p>
+        </article>
+        <article class="focus-card">
+          <span class="card-index" data-i18n="home.deliveryIndex">03 / DELIVERY</span>
+          <div class="card-icon" aria-hidden="true">⌁</div>
+          <h3 data-i18n="home.storeOperations">Store operations</h3>
+          <p data-i18n="home.storeDescription">Supporting smooth cashiering, strong standards, and dependable day-to-day performance.</p>
+        </article>
+      </div>
+      <div class="home-footer-cta">
+        <div><p class="eyebrow"><span></span><span data-i18n="home.connect">LET’S CONNECT</span></p><h2 data-i18n="home.connectTitle">Looking for a people-first retail leader?</h2></div>
+        <a class="btn btn-primary" href="Contact.html"><span data-i18n="common.talk">Let’s talk</span> <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>

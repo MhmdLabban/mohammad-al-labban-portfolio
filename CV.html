@@ -1,57 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV | Mohammad Al Labban</title>
+  <title data-i18n="cv.pageTitle">CV | Mohammad Al Labban</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<button class="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
-
-<aside class="sidebar">
-  <div class="profile">
-    <img src="your-picture.jpeg" alt="Mohammad Al Labban" class="profile-picture">
-    <h1>Mohammad Al Labban</h1>
-  </div>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About Me</a></li>
-      <li><a href="CV.html">CV</a></li>
-      <li><a href="Certificates.html">Certifications</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Mohammad Al Labban home" data-i18n-aria-label="common.home">MAL</a>
+  <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation" data-i18n-aria-label="nav.label">
+    <a href="About.html" data-i18n="nav.about">About</a>
+    <a href="CV.html" aria-current="page" data-i18n="nav.experience">Experience</a>
+    <a href="Certificates.html" data-i18n="nav.education">Education</a>
+    <a href="Contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
-
-  <button id="theme-toggle" class="btn" type="button" aria-label="Toggle theme">🌙 Dark Mode</button>
-</aside>
+  <div class="header-actions">
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">☾</button>
+    <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language">العربية</button>
+    <a class="header-cta" href="Contact.html"><span data-i18n="common.talk">Let’s talk</span> <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
 
 <main class="main-content">
-  <section class="section">
-    <h2>Curriculum Vitae</h2>
+  <section class="section page-section">
+    <p class="eyebrow"><span></span><span data-i18n="cv.eyebrow">EXPERIENCE &amp; DOCUMENTS</span></p>
+    <h1 data-i18n="cv.heading">People-first retail leadership.</h1>
 
-    <h3>Experience</h3>
-    <ul>
-      <li><strong>10+ years in international retail environments</strong></li>
-      <li><strong>Merchandising operations & execution support</strong></li>
-      <li><strong>Visual merchandising & brand standards implementation</strong></li>
-      <li><strong>Inventory management, stock flow & FIFO control</strong></li>
-      <li><strong>Sales performance tracking & reporting</strong></li>
-      <li><strong>Cross-functional coordination</strong></li>
-      <li><strong>Team supervision, training & leadership</strong></li>
-      <li><strong>Process improvement & operational efficiency</strong></li>
-      <li><strong>Data-driven decision making</strong></li>
-      <li><strong>Technical support background</strong></li>
+    <div class="content-panel">
+    <h2 data-i18n="cv.experience">Experience</h2>
+    <ul class="detail-list">
+      <li><strong data-i18n="cv.item1">10+ years in international retail environments</strong></li>
+      <li><strong data-i18n="cv.item2">Merchandising operations &amp; execution support</strong></li>
+      <li><strong data-i18n="cv.item3">Visual merchandising &amp; brand standards implementation</strong></li>
+      <li><strong data-i18n="cv.item4">Inventory management, stock flow &amp; FIFO control</strong></li>
+      <li><strong data-i18n="cv.item5">Sales performance tracking &amp; reporting</strong></li>
+      <li><strong data-i18n="cv.item6">Cross-functional coordination</strong></li>
+      <li><strong data-i18n="cv.item7">Team supervision, training &amp; leadership</strong></li>
+      <li><strong data-i18n="cv.item8">Process improvement &amp; operational efficiency</strong></li>
+      <li><strong data-i18n="cv.item9">Data-driven decision making</strong></li>
+      <li><strong data-i18n="cv.item10">Technical support background</strong></li>
     </ul>
+    </div>
 
-    <h3>Download My Documents</h3>
+    <h2 class="subsection-title" data-i18n="cv.downloadHeading">Download my documents</h2>
     <div class="download-buttons">
-      <a href="Mohammad Al Labban CV 2026.pdf" download class="btn">📄 Formal CV</a>
-      <a href="Mohammad Al Labban ATS CV 2026.pdf" download class="btn">📊 ATS CV</a>
-      <a href="Mohammad Al Labban Cover Letter 2026.pdf" download class="btn">📨 Cover Letter</a>
+      <a href="Mohammad Al Labban CV 2026.pdf" download class="btn" data-i18n="cv.formal">📄 Formal CV</a>
+      <a href="Mohammad Al Labban ATS CV 2026.pdf" download class="btn" data-i18n="cv.ats">📊 ATS CV</a>
+      <a href="Mohammad Al Labban Cover Letter 2026.pdf" download class="btn" data-i18n="cv.cover">📨 Cover Letter</a>
     </div>
   </section>
 </main>

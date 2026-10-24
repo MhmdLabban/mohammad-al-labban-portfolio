@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me | Mohammad Al Labban</title>
+  <title data-i18n="about.pageTitle">About Me | Mohammad Al Labban</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<button class="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
-
-<aside class="sidebar">
-  <div class="profile">
-    <img src="your-picture.jpeg" alt="Mohammad Al Labban" class="profile-picture">
-    <h1>Mohammad Al Labban</h1>
-  </div>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About Me</a></li>
-      <li><a href="CV.html">CV</a></li>
-      <li><a href="Certificates.html">Certifications</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Mohammad Al Labban home" data-i18n-aria-label="common.home">MAL</a>
+  <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation" data-i18n-aria-label="nav.label">
+    <a href="About.html" aria-current="page" data-i18n="nav.about">About</a>
+    <a href="CV.html" data-i18n="nav.experience">Experience</a>
+    <a href="Certificates.html" data-i18n="nav.education">Education</a>
+    <a href="Contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
-
-  <button id="theme-toggle" class="btn" type="button" aria-label="Toggle theme">🌙 Dark Mode</button>
-</aside>
+  <div class="header-actions">
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">☾</button>
+    <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language">العربية</button>
+    <a class="header-cta" href="Contact.html"><span data-i18n="common.talk">Let’s talk</span> <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
 
 <main class="main-content">
-  <section class="section">
-    <h2>About Me</h2>
+  <section class="section page-section">
+    <p class="eyebrow"><span></span><span data-i18n="about.eyebrow">A LITTLE ABOUT ME</span></p>
+    <h1 data-i18n="about.heading">Leadership built around people and service.</h1>
 
-    <p>Retail operations professional with experience in front-end management, customer service, team leadership, and merchandising in fast-paced retail environments. Currently leading Touch Point and cashiering operations at Primark in Dubai, managing a diverse team of 55+ colleagues and supporting strong customer service, operational compliance, and efficient store performance.</p>
+    <p data-i18n="about.paragraph1">Retail operations professional with experience in front-end management, customer service, team leadership, and merchandising in fast-paced retail environments. Currently leading Touch Point and cashiering operations at Primark in Dubai, managing a diverse team of 55+ colleagues and supporting strong customer service, operational compliance, and efficient store performance.</p>
 
-    <p>Experienced in coaching and developing teams, managing daily operations, resolving customer escalations, and partnering with management and Asset Protection teams. Brings a strong background in visual merchandising and inventory processes, with a focus on improving operational efficiency, customer satisfaction, and the overall shopping experience.</p>
+    <p data-i18n="about.paragraph2">Experienced in coaching and developing teams, managing daily operations, resolving customer escalations, and partnering with management and Asset Protection teams. Brings a strong background in visual merchandising and inventory processes, with a focus on improving operational efficiency, customer satisfaction, and the overall shopping experience.</p>
 
-    <p>Passionate about developing people, strengthening retail operations, and supporting business growth through effective leadership and customer-focused service.</p>
+    <p data-i18n="about.paragraph3">Passionate about developing people, strengthening retail operations, and supporting business growth through effective leadership and customer-focused service.</p>
 
-      </section>
+  </section>
 </main>
 
 <script src="script.js"></script>

@@ -1,50 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Mohammad Al Labban</title>
+  <title data-i18n="contact.pageTitle">Contact | Mohammad Al Labban</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<button class="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Mohammad Al Labban home" data-i18n-aria-label="common.home">MAL</a>
 
-<aside class="sidebar">
-  <div class="profile">
-    <img src="your-picture.jpeg" alt="Mohammad Al Labban" class="profile-picture">
-    <h1>Mohammad Al Labban</h1>
-  </div>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About Me</a></li>
-      <li><a href="CV.html">CV</a></li>
-      <li><a href="Certificates.html">Certifications</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
+  <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation" data-i18n-aria-label="nav.label">
+    <a href="About.html" data-i18n="nav.about">About</a>
+    <a href="CV.html" data-i18n="nav.experience">Experience</a>
+    <a href="Certificates.html" data-i18n="nav.education">Education</a>
+    <a href="Contact.html" aria-current="page" data-i18n="nav.contact">Contact</a>
   </nav>
-
-  <button id="theme-toggle" class="btn" type="button" aria-label="Toggle theme">🌙 Dark Mode</button>
-</aside>
+  <div class="header-actions">
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">☾</button>
+    <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language">العربية</button>
+    <a class="header-cta" href="Contact.html"><span data-i18n="common.talk">Let’s talk</span> <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
 
 <main class="main-content">
-  <section class="section">
-    <h2>Contact</h2>
-    <p>If you’d like to get in touch, please use the form below:</p>
+  <section class="section page-section">
+    <p class="eyebrow"><span></span><span data-i18n="contact.eyebrow">GET IN TOUCH</span></p>
+    <h1 data-i18n="contact.heading">Let’s start a conversation.</h1>
+    <p data-i18n="contact.intro">If you’d like to get in touch, please use the form below:</p>
 
     <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
-      <label for="name">Name:</label>
+      <label for="name" data-i18n="contact.name">Name:</label>
       <input type="text" id="name" name="name" required>
 
-      <label for="email">Email:</label>
+      <label for="email" data-i18n="contact.email">Email:</label>
       <input type="email" id="email" name="email" required>
 
-      <label for="message">Message:</label>
+      <label for="message" data-i18n="contact.message">Message:</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit" class="btn">Send</button>
+      <button type="submit" class="btn" data-i18n="contact.send">Send</button>
     </form>
   </section>
 </main>

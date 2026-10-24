@@ -1,66 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certifications | Mohammad Al Labban</title>
+  <title data-i18n="education.pageTitle">Education &amp; Certifications | Mohammad Al Labban</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<button class="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
-
-<aside class="sidebar">
-  <div class="profile">
-    <img src="your-picture.jpeg" alt="Mohammad Al Labban" class="profile-picture">
-    <h1>Mohammad Al Labban</h1>
-  </div>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About Me</a></li>
-      <li><a href="CV.html">CV</a></li>
-      <li><a href="Certificates.html">Certifications</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-    </ul>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Mohammad Al Labban home" data-i18n-aria-label="common.home">MAL</a>
+  <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation" data-i18n-aria-label="nav.label">
+    <a href="About.html" data-i18n="nav.about">About</a>
+    <a href="CV.html" data-i18n="nav.experience">Experience</a>
+    <a href="Certificates.html" aria-current="page" data-i18n="nav.education">Education</a>
+    <a href="Contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
-
-  <button id="theme-toggle" class="btn" type="button" aria-label="Toggle theme">🌙 Dark Mode</button>
-</aside>
+  <div class="header-actions">
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">☾</button>
+    <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language">العربية</button>
+    <a class="header-cta" href="Contact.html"><span data-i18n="common.talk">Let’s talk</span> <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
 
 <main class="main-content">
-  <section class="section">
+  <section class="section page-section">
+    <p class="eyebrow"><span></span><span data-i18n="education.eyebrow">EDUCATION &amp; CERTIFICATIONS</span></p>
+    <h1 data-i18n="education.heading">Learning that supports better operations.</h1>
 
-    <h2>Education</h2>
-    <ul>
-      <li><strong>MBA Project and Operations Management</strong> at York St John University – 2026</li>
-      <li><strong>Diploma in Digital Store Management</strong> at USA Train Prog Academy – 2023</li>
-      <li><strong>Undergraduate Degree in Computer Science</strong> at AUL University – 2016</li>
+    <div class="content-panel">
+    <h2 data-i18n="education.education">Education</h2>
+    <ul class="detail-list">
+      <li><strong data-i18n="education.degree1">MBA Project and Operations Management</strong> <span data-i18n="education.degree1Details">at York St John University – 2026</span></li>
+      <li><strong data-i18n="education.degree2">Diploma in Digital Store Management</strong> <span data-i18n="education.degree2Details">at USA Train Prog Academy – 2023</span></li>
+      <li><strong data-i18n="education.degree3">Undergraduate Degree in Computer Science</strong> <span data-i18n="education.degree3Details">at AUL University – 2016</span></li>
     </ul>
+    </div>
 
-    <h2>Certifications</h2>
-    <ul>
-      <li><strong>Digital Marketing</strong></li>
-      <li><strong>Digital Store Management</strong></li>
-      <li><strong>Information Technology Leadership</strong></li>
-      <li><strong>Information Technology Strategy</strong></li>
-      <li><strong>Logistics</strong></li>
-      <li><strong>Programming</strong></li>
-      <li><strong>Project Management by Microsoft and LinkedIn</strong></li>
-      <li><strong>Project Management Institute</strong></li>
+    <div class="content-panel">
+    <h2 data-i18n="education.certifications">Certifications</h2>
+    <ul class="detail-list">
+      <li><strong data-i18n="education.cert1">Digital Marketing</strong></li>
+      <li><strong data-i18n="education.cert2">Digital Store Management</strong></li>
+      <li><strong data-i18n="education.cert3">Information Technology Leadership</strong></li>
+      <li><strong data-i18n="education.cert4">Information Technology Strategy</strong></li>
+      <li><strong data-i18n="education.cert5">Logistics</strong></li>
+      <li><strong data-i18n="education.cert6">Programming</strong></li>
+      <li><strong data-i18n="education.cert7">Project Management by Microsoft and LinkedIn</strong></li>
+      <li><strong data-i18n="education.cert8">Project Management Institute</strong></li>
     </ul>
+    </div>
 
-    <p>You can download all my certificates together in one ZIP file:</p>
-    <a href="Certificates.zip" download class="btn">⬇️ Download All Certificates</a>
+    <p class="download-note" data-i18n="education.downloadNote">Download all my certificates together in one ZIP file:</p>
+    <a href="Certificates.zip" download class="btn" data-i18n="education.download">⬇️ Download All Certificates</a>
 
   </section>
 </main>
 
 <div id="cert-modal" class="modal" aria-hidden="true">
   <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
-    <h2 id="cert-modal-title" class="sr-only">Certificate preview</h2>
-    <button class="close-btn" type="button" aria-label="Close certificate viewer">&times;</button>
+    <h2 id="cert-modal-title" class="sr-only" data-i18n="education.preview">Certificate preview</h2>
+    <button class="close-btn" type="button" aria-label="Close certificate viewer" data-i18n-aria-label="education.close">&times;</button>
     <div id="cert-pdf-container" class="cert-pdf-container" aria-live="polite"></div>
   </div>
 </div>
